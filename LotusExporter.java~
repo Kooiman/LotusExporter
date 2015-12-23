@@ -124,8 +124,8 @@ public class LotusExporter{
         
 
     for(keyStroke k : keySequence){
-      k.press(robby);
-      safeSleep(k.delay);
+//      k.press(robby);
+//      safeSleep(k.delay);
     }
   }
   
