@@ -55,11 +55,7 @@ public class LotusExporter{
   
     Robot robby = new Robot();
     ArrayList<keyStroke> keySequence = new ArrayList<>();
-    String message = "Hello World";
-    for(int i = 0; i < message.length(); i++){
-      keySequence.add(getKeyStrokeFromChar(message.charAt(i), 50));
-    }
-    
+   
     keySequence.add(new keyStroke(KeyEvent.VK_HOME, 1000));
     
     for(int n = 0; n < files; n++){
