@@ -83,6 +83,7 @@ public class LotusExporter{
       //step 6, first email
       if(n == 0){
         keySequence.addAll(getKeySequenceFromString(args[0], 50));
+        keySequence.add(new keyStroke(KeyEvent.VK_ENTER, 200));
         
         //step 7, first email
         int[] ctrlShift = {KeyEvent.VK_CONTROL, KeyEvent.VK_SHIFT};
@@ -97,12 +98,9 @@ public class LotusExporter{
       } else {
         //step 6, subsequent emails
         keySequence.addAll(getKeySequenceFromString(args[0] + "\\LotusExport", 50));
-        keySequence.add(new keyStroke(KeyEvent.VK_TAB, 500));
-        keySequence.add(new keyStroke(KeyEvent.VK_TAB, 500));
-        keySequence.add(new keyStroke(KeyEvent.VK_TAB, 500));
-        keySequence.add(new keyStroke(KeyEvent.VK_TAB, 500));
-        keySequence.add(new keyStroke(KeyEvent.VK_TAB, 500));
-
+        keySequence.add(new keyStroke(KeyEvent.VK_ENTER, 200));
+        for(int i = 0 ; i < 5; i++)
+          keySequence.add(new comboStroke(KeyEvent.VK_TAB, shift, 200));
       }
       
       //step 9
