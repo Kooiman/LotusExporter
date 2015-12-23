@@ -352,7 +352,7 @@ public class LotusExporter{
         return new keyStroke(KeyEvent.VK_BACK_SLASH, delay);
       
       case '_':
-        return new keyStroke(KeyEvent.VK_UNDERSCORE, delay);
+        return new comboStroke(KeyEvent.VK_MINUS, shift, delay);
         
     
       default:
