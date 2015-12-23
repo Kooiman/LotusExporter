@@ -61,6 +61,7 @@ public class LotusExporter{
     for(int n = 0; n < files; n++){
       //step 3
       int[] ctrl = {KeyEvent.VK_CONTROL};
+      keySequence.add(new keyStroke(KeyEvent.VK_ENTER, 500));
       keySequence.add(new comboStroke(KeyEvent.VK_P, ctrl, 2000));
       
       //step 4
@@ -112,6 +113,7 @@ public class LotusExporter{
       keySequence.add(new comboStroke(KeyEvent.VK_F4, alt, 4000));
       
       //step 13
+      keySequence.add(new comboStroke(KeyEvent.VK_W, ctrl, 500));
       keySequence.add(new keyStroke(KeyEvent.VK_DOWN, 1000));
     }//end for
     
