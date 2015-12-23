@@ -70,13 +70,13 @@ public class LotusExporter{
       int[] shift = {KeyEvent.VK_SHIFT};
       keySequence.add(new comboStroke(KeyEvent.VK_TAB, shift, 500));
       keySequence.add(new comboStroke(KeyEvent.VK_TAB, shift, 500));
+      keySequence.add(new keyStroke(KeyEvent.VK_LEFT, 500));
+      keySequence.add(new keyStroke(KeyEvent.VK_LEFT, 500));
       keySequence.add(new keyStroke(KeyEvent.VK_ENTER, 3000));
       
       //step 6
       for(int i = 0; i < 5; i++)
         keySequence.add(new keyStroke(KeyEvent.VK_TAB, 300));
-      keySequence.add(new keyStroke(KeyEvent.VK_LEFT, 500));
-      keySequence.add(new keyStroke(KeyEvent.VK_LEFT, 500));
       keySequence.add(new keyStroke(KeyEvent.VK_ENTER, 500));
       
       //step 6, first email

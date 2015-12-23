@@ -343,7 +343,7 @@ public class LotusExporter{
         return new keyStroke(KeyEvent.VK_SPACE, delay);
         
       case ':':
-        return new keyStroke(KeyEvent.VK_COLON, delay);
+        return new comboStroke(KeyEvent.VK_SEMICOLON, shift, delay);
         
       case '/':
         return new keyStroke(KeyEvent.VK_SLASH, delay);
